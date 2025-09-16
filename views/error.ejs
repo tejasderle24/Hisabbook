@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Khaatabook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .nav-gradient { background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%); }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <nav class="w-full py-5 px-6 flex items-center justify-between text-white nav-gradient shadow-lg">
+        <a href="/" class="text-2xl font-bold flex items-center gap-2">
+            <i class="ri-booklet-line"></i>
+            Khaatabook
+        </a>
+        <div class="flex gap-6 items-center">
+            <a href="/" class="hover:underline flex items-center gap-1">
+                <i class="ri-home-4-line"></i>
+                Home
+            </a>
+            <a href="/create" class="bg-white text-indigo-600 px-4 py-2 rounded-md font-medium hover:bg-gray-100 transition flex items-center gap-1">
+                <i class="ri-add-circle-line"></i>
+                Create New Hisaab
+            </a>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <div class="bg-white rounded-xl shadow-sm p-8 text-center">
+            <div class="h-16 w-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="ri-error-warning-line text-red-600 text-2xl"></i>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">Error</h2>
+            <p class="text-gray-600 mb-6"><%= message %></p>
+            <a href="/" class="bg-indigo-600 text-white px-6 py-2 rounded-md font-medium hover:bg-indigo-700 transition inline-flex items-center gap-2">
+                <i class="ri-home-4-line"></i>
+                Return to Home
+            </a>
+        </div>
+    </main>
+    
+    <footer class="mt-12 py-6 text-center text-gray-500 text-sm border-t border-gray-200">
+        <p>© 2023 Khaatabook. Your digital ledger for managing accounts.</p>
+    </footer>
+</body>
+</html>
